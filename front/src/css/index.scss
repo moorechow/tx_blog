@@ -83,7 +83,7 @@ body{
             float: left;
             width: $mainBoxWidth;
             // height: 500px;
-            //background: #fff;
+            // background: red;
             .banner-group{
                 width: 100%;
                 height: $bannerHeight;
@@ -155,13 +155,6 @@ body{
                 }
             }
         }
-
-        .sidebar-wrapper{
-            float: right;
-            width: $sidebarWidth;
-            height: 500px;
-            background: darkseagreen;
-        }
     }
 }
 
@@ -175,7 +168,7 @@ body{
                     width: 100%;
                     height: 66px;
                     overflow: hidden;
-                    border: 1px solid #eee;
+                    border: 1px solid $linecolor;
                     border-left: none;
                     border-right: none;
                     li{
@@ -183,14 +176,14 @@ body{
                         padding: 0 10px;
                         margin-top: 20px;
                         a{
-                            color: #878787;
+                            color: $assistFontcolor;
                         }
                         &:first-of-type{
                             border-left: 5px solid #5c87d9;
                         }
                         &.active{
                             a{
-                                color: #212121;
+                                color: $mainFontcolor;
                             }
                         }
                     }
@@ -199,7 +192,7 @@ body{
                     li{
                         padding:20px;
                         overflow: hidden;
-                        border-bottom: 1px solid #eee;
+                        border-bottom: 1px solid $linecolor;
                         .thumbnail-group{
                             float: left;
                             height: 162px;
@@ -218,7 +211,7 @@ body{
                             .title{
                                 font-size: 18px;
                                 a{
-                                    color: #212121;
+                                    color: $mainFontcolor;
                                     &:hover{
                                         color: $themecolor;
                                     }
@@ -226,7 +219,7 @@ body{
                             }
 
                             .desc{
-                                color: #878787;
+                                color: $assistFontcolor;
                                 font-size: 14px;
                                 margin-top: 10px;
                             }
@@ -237,7 +230,7 @@ body{
                                 right: 0;
                                 bottom: 0;
                                 font-size: 14px;
-                                color: #878787;
+                                color: $assistFontcolor;
                                 .category{
                                     float: left;
                                     color: $themecolor;
@@ -251,7 +244,7 @@ body{
                                 }
                             }
                         }
-                        //border-bottom: 1px solid #eee;
+                        //border-bottom: 1px solid $linecolor;
                     }
                 }
                 .load-more-group{
@@ -262,12 +255,206 @@ body{
                         height: 40px;
                         background: #d2dcea;
                         color: #6d85ac;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
                     }
                 }
             }
 
 
         }
+        .sidebar-wrapper{
+            float: right;
+            width: $sidebarWidth;
+            //height: 600px;
+            background: #fff;
+            overflow: hidden;
+            .title-group{
+                padding: 20px;
+                overflow: hidden;
+
+                .title{
+                    float: left;
+                    font-size: 18px;
+                    color: $mainFontcolor;
+                }
+
+                .more{
+                    float: right;
+                    font-size: 14px;
+                    color: $themecolor;
+                }
+            }
+            .advertise-group{
+                img{
+                    width: 100%;
+                }
+            }
+            .focus-group{
+                padding: 0 20px;
+                overflow: hidden;
+                .left-group{
+                    width: 190px;
+                    float: left;
+                    li{
+                        width: 100%;
+                        height: 50px;
+                        line-height: 50px;
+                        background: url("https://www.xfz.cn/static/build/images/side-icon.png");
+                        background-repeat: no-repeat;
+                        background-size: 24%;
+                        margin-bottom: 20px;
+                        overflow: hidden;
+                        a{
+                            float: left;
+                            margin-left: 64px;
+                            color: $assistFontcolor;
+                            font-size: 14px;
+                        }
+                    }
+                    .zhihu{
+                        background-position: 0 2px;
+                    }
+                    .weibo{
+                        background-position: 0 -58px;
+                    }
+                    .toutiao{
+                        background-position: 0  -116px;
+                    }
+                }
+                .right-group{
+                    float: right;
+                    width: 100px;
+                    background: url("https://www.xfz.cn/static/build/images/xfz-wechat-share.png");
+                    background-size: 95%;
+                    background-repeat: no-repeat;
+                    .desc{
+                        margin-top: 100px;
+                        color: $assistFontcolor;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .hot-news-group{
+                .hot-list-group{
+                    li{
+                        padding: 0 20px 20px;
+                        overflow: hidden;
+                        border-bottom: 1px solid $linecolor;
+                        .left-group{
+                            float: left;
+                            width: 204px;
+                            height: 72px;
+                            position: relative;
+                            .title{
+                                font-size: 16px;
+                                a{
+                                    color: $mainFontcolor;
+                                    &:hover{
+                                        color: $themecolor;
+                                    }
+                                }
+                            }
+                            .more{
+                                font-size: 12px;
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                .category{
+                                    color: $themecolor;
+                                    float: left;
+                                }
+                                .pub-time{
+                                    color: $assistFontcolor;
+                                    float: right;
+                                }
+                            }
+                        }
+                        .right-group{
+                            float: right;
+                            width: 101px;
+                            height: 72px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    font-size: 14px;
+    color: #c9c9c9;
+    .top-group{
+        background: #555e67;
+        height: 100px;
+        .top-inner-group{
+            width: $pageWidth;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 25px;
+            box-sizing: border-box;
+            .logo-box{
+                width: 168px;
+                height: 54px;
+                float: left;
+                background: url("../images/tx_logo1.png") no-repeat;
+                background-size: 45%;
+            }
+            .detail-group{
+                float: left;
+                margin-left: 84px;
+                .line1{
+                    overflow: hidden;
+                    .links{
+                        float: left;
+                        overflow: hidden;
+                        li{
+                            float: left;
+                            padding: 0 10px;
+                            &:first-of-type{
+                                padding-left: 0;
+                            }
+                            a{
+                                color: #c9c9c9;
+                            }
+                            border-right: 1px solid #c9c9c9;
+                            &:last-of-type{
+                                border-right: none;
+                            }
+                        }
+                    }
+                    .about-us{
+                        float: left;
+                        margin-left: 40px;
+                    }
+                }
+                .line2{
+                    overflow: hidden;
+                    margin-top: 10px;
+                    .address{
+                        float: left;
+                    }
+                    .contact{
+                        float: left;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-group{
+        background: #383e44;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
     }
 }
 
