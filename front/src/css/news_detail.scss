@@ -1,0 +1,151 @@
+@import "header.scss";
+@import "footer.scss";
+@import "body.scss";
+
+body{
+    background: #f2f2f2;
+}
+
+.main{
+    .wrapper{
+        .main-content-wrapper{
+            background: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            .news-wrapper{
+                .title{
+                    font-size: 24px;
+                    color: $mainFontcolor;
+                    font-weight: 400;
+                }
+                .news-info{
+                    overflow: hidden;
+                    margin-top: 20px;
+                    color: $assistFontcolor;
+                    font-size: 14px;
+                    line-height: $newsinfoheight;
+                    //background: pink;
+                    .info-group{
+                        float: left;
+                        //background: greenyellow;
+                        .pub-time{
+                            margin-left: 10px;
+                        }
+                        .category{
+                            margin-left: 10px;
+                            background: $themecolor;
+                            color: #fff;
+                            padding: 0 5px;
+                            border-radius: 2px;
+                        }
+                    }
+                    .share-group{
+                        float: right;
+                        overflow: hidden;
+                        //background: blueviolet;
+                        span{
+                            float: left;
+                        }
+                        .share-item{
+                            float: left;
+                            width: 28px;
+                            height: 28px;
+                            background-image: url("https://www.xfz.cn/static/build/images/share.png");
+                            background-repeat: no-repeat;
+                            background-size: 200%;
+                        }
+                        .weixin{
+                            margin-right: 10px;
+                        }
+                        .weibo{
+                            background-position: -30px 0; // x/y坐标值
+                        }
+                    }
+                }
+                .article{
+                    margin-top: 20px;
+                    //color: $assistFontcolor;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+            .comment-wrapper{
+                border-top: 1px solid $linecolor;
+                padding-top: 20px;
+                .title{
+                    color: $mainFontcolor;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                .comment-textarea{
+                    margin-top: 10px;
+                    width: 100%;
+                    resize: none;
+                    outline: none;
+                    border:1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    padding: 6px 10px;
+                    box-sizing: border-box;
+                }
+                .nologin-textarea{
+                    height: 40px;
+                    line-height: 26px;
+                    overflow: hidden;
+                }
+                .login-textarea{
+                    height: 80px;
+                }
+                .submit-btn-group{
+                    text-align: right;
+                    margin-top: 14px;
+                    .submit-btn{
+                        background: $themecolor;
+                        border: none;
+                        padding: 6px 10px;
+                        color: #fff;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+                .comment-list{
+                    margin-top: 20px;
+                    li{
+                        border-bottom: 1px solid $linecolor;
+                        margin-bottom: 20px;
+                        padding-bottom: 20px;
+                        .comment-info{
+                            overflow: hidden;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 14px;
+                            color: $assistFontcolor;
+                            //background: yellowgreen;
+                            .avatar{
+                                float: left;
+                                width: 40px;
+                                border-radius: 50%;
+                                //background: red;
+                            }
+                            .author{
+                                float: left;
+                                margin-left: 20px;
+                                line-height: 40px;
+                                //background: rebeccapurple;
+                            }
+                            .pub-time{
+                                float: right;
+                                //background: blueviolet;
+                            }
+                        }
+                        .comment-content{
+                            margin-left: 60px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

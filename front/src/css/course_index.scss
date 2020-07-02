@@ -1,0 +1,100 @@
+@import "init.scss";
+@import "constants.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "body.scss";
+
+.main{
+    margin-top: 64px;
+    .course-nav{
+        width: 100%;
+        height: $coursenavheight;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+        // background: pink;
+        .nav-contain{
+            width: $pageWidth;
+            height: $coursenavheight;
+            margin: 0 auto;
+            line-height: $coursenavheight;
+            h3.title{
+                float: left;
+                font-size: 24px;
+                color: #696969;
+            }
+            .nav-list{
+                float: left;
+                margin-left: 100px;
+                li{
+                    float: left;
+                    margin-right: 40px;
+                    a{
+                        color: #888888;
+                        cursor: pointer;
+                    }
+                    &.active{
+                        a{
+                            color: $mainFontcolor;
+                        }
+                    }
+                }
+            }
+    }
+  }
+
+    .wrapper{
+        .course-list{
+            margin-top: 20px;
+
+            li{
+                $courseItemHeight:280px;
+                $thumbnailHeight:158px;
+                background: #fff;
+                width: 278px;
+                height: $courseItemHeight;
+                .thumbnail-group{
+                    width: 100%;
+                    height: $thumbnailHeight;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .course-info{
+                    padding: 16px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    height: $courseItemHeight - $thumbnailHeight;
+                    //background: pink;
+                    position: relative;
+                    .title{
+                        font-size: 16px;
+                        color: $mainFontcolor;
+                    }
+                    .author{
+                        margin-top: 10px;
+                        font-size: 14px;
+                        color: $assistFontcolor;
+                    }
+                    .price-group{
+                        position: absolute;
+                        font-size: 14px;
+                        left: 16px;
+                        right: 16px;
+                        bottom: 16px;
+                        text-align: right;
+                        .free{
+                            color: rgb(126,211,33);
+                        }
+                        .pay{
+                            color: rgb(245,74,74);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

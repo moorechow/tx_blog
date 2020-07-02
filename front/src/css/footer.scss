@@ -1,0 +1,118 @@
+@import "init.scss";
+@import "constants.scss";
+
+.footer{
+    font-size: 14px;
+    color: #c9c9c9;
+    padding-top: 20px;
+    .top-group{
+        background: #555e67;
+        height: 100px;
+        .top-inner-group{
+            width: $pageWidth;
+            margin: 0 auto;
+            //overflow: hidden;
+            position: relative;
+            padding: 25px;
+            box-sizing: border-box;
+            .logo-box{
+                width: 168px;
+                height: 54px;
+                float: left;
+                background: url("../images/tx_logo1.png") no-repeat;
+                background-size: 45%;
+            }
+            .detail-group{
+                float: left;
+                margin-left: 84px;
+                .line1{
+                    overflow: hidden;
+                    .links{
+                        float: left;
+                        overflow: hidden;
+                        li{
+                            float: left;
+                            padding: 0 10px;
+                            &:first-of-type{
+                                padding-left: 0;
+                            }
+                            a{
+                                color: #c9c9c9;
+                            }
+                            border-right: 1px solid #c9c9c9;
+                            &:last-of-type{
+                                border-right: none;
+                            }
+                        }
+                    }
+                    .about-us{
+                        float: left;
+                        margin-left: 40px;
+                        .title{
+                            float: left;
+                        }
+                        .social-group{
+                            float: left;
+                            overflow: hidden;
+                            li{
+                                float: left;
+                            }
+                            .weixin{
+                                background: url("https://www.xfz.cn/static/build/images/wx-icon.png") no-repeat;
+                                background-size: 30%;
+                                cursor: pointer;
+                                .text{
+                                    margin-left: 30px;
+                                    color: white;
+                                }
+                                .wx-qrcode{
+                                    width: 204px;
+                                    height: 204px;
+                                    background: url("https://www.xfz.cn/static/build/images/xfz-wechat-share.png");
+                                    background-size: 100%;
+                                    position: absolute;
+                                    left: 630px;
+                                    top: -200px;
+                                    display: none;
+                                }
+                                &:hover .wx-qrcode{
+                                    display: block;
+                                }
+                            }
+
+                            .weibo{
+                                margin-left: 20px;
+                                background: url("https://www.xfz.cn/static/build/images/xl-icon.png") no-repeat;
+                                background-size: 23%;
+                                a{
+                                    color: white;
+                                }
+                                .text{
+                                    margin-left: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .line2{
+                    overflow: hidden;
+                    margin-top: 10px;
+                    .address{
+                        float: left;
+                    }
+                    .contact{
+                        float: left;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-group{
+        background: #383e44;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+    }
+}

@@ -1,0 +1,65 @@
+@import "init.scss";
+@import "constants.scss";
+.header{
+    width: 100%;
+    height: $navHeight;
+    background: #3a3a3a;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 100;  // 避免被覆盖
+    .container{
+        width: $pageWidth;
+        height: 100%;
+        background: #3a3a3a;
+        margin: 0 auto;
+        //overflow: hidden;
+
+        .logo-box{
+            width: 380px;
+            height: 54px;
+            background: url("../images/tx_logo.png") no-repeat;
+            margin-top: 8px;
+            float: left;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .nav{
+            margin-left: 128px;
+            float: left;
+            line-height: 59px; /* 5px用来放active的标记条 */
+            height: $navHeight;
+
+            li{
+                float: left;
+                margin-right: 40px;
+                box-sizing: border-box;
+                a{
+                    color: white;
+                }
+                &.active{
+                    border-bottom: 5px solid #5c87d9;
+                }
+            }
+        }
+
+        .auth-box{
+                float: right;
+                line-height: $navHeight;
+                height: $navHeight;
+                color: #ffffff;
+                .iconfont{
+                    font-size: 16px;
+                }
+                a{
+                    color: #ffffff;
+                }
+            }
+    }
+}
