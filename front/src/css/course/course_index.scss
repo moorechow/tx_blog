@@ -1,56 +1,27 @@
-@import "init.scss";
-@import "constants.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "body.scss";
+@import "../common/init.scss";
+@import "../common/constants.scss";
+@import "../common/header.scss";
+@import "../common/footer.scss";
+@import "../common/body.scss";
+@import "course_nav.scss";
 
 .main{
-    margin-top: 64px;
-    .course-nav{
-        width: 100%;
-        height: $coursenavheight;
-        box-shadow: 0 4px 5px rgba(0,0,0,0.1);
-        // background: pink;
-        .nav-contain{
-            width: $pageWidth;
-            height: $coursenavheight;
-            margin: 0 auto;
-            line-height: $coursenavheight;
-            h3.title{
-                float: left;
-                font-size: 24px;
-                color: #696969;
-            }
-            .nav-list{
-                float: left;
-                margin-left: 100px;
-                li{
-                    float: left;
-                    margin-right: 40px;
-                    a{
-                        color: #888888;
-                        cursor: pointer;
-                    }
-                    &.active{
-                        a{
-                            color: $mainFontcolor;
-                        }
-                    }
-                }
-            }
-    }
-  }
-
     .wrapper{
         .course-list{
             margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
             li{
                 $courseItemHeight:280px;
                 $thumbnailHeight:158px;
+                //float: left;
                 background: #fff;
                 width: 278px;
                 height: $courseItemHeight;
+                margin-bottom: 20px;
                 .thumbnail-group{
                     width: 100%;
                     height: $thumbnailHeight;
@@ -90,7 +61,14 @@
                         }
                     }
                 }
+                &:hover{
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                }
             }
+        }
+        .course-list > i {
+            width: 258px;
+            margin-right: 20px;
         }
     }
 }

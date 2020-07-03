@@ -1,0 +1,180 @@
+@import "../common/init.scss";
+@import "../common/constants.scss";
+@import "../common/header";
+@import "../common/footer";
+@import "../common/body";
+@import "course_nav.scss";
+
+.main{
+    .wrapper{
+        width: 1070px;
+        margin-top: 20px;
+        .course-wrapper{
+            background: #fff;
+            .course-info{
+                padding: 20px;
+                .course-title{
+                    color: $mainFontcolor;
+                    font-size: 20px;
+                }
+                .price-group{
+                    overflow: hidden;
+                    margin-top: 20px;
+                    .share-group{
+                        float: left;
+                        .title{
+                            color: $assistFontcolor;
+                            font-size: 14px;
+                            float: left;
+                        }
+                        .share-item{
+                            float: left;
+                            width: 28px;
+                            height: 28px;
+                            background-image: url("https://www.xfz.cn/static/build/images/share.png");
+                            background-repeat: no-repeat;
+                            background-size: 200%;
+                        }
+                        .weixin{
+                            margin-right: 10px;
+                        }
+                        .weibo{
+                            background-position: -30px 0; // x/y坐标值
+                        }
+                    }
+                    .buy-group{
+                        float: right;
+                        .price{
+                            font-size: 16px;
+                            margin-right: 20px;
+                        }
+                        .free{
+                                color: $freecolor;
+                        }
+                        .pay{
+                            color: $paycolor;
+                        }
+                        .buy-btn{
+                            color: #fff;
+                            background: #ff8d3f;
+                            //padding: 10px 20px;
+                            height: 40px;
+                            width: 120px;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 40px;
+                            border-radius: 5px;
+                        }
+
+                    }
+                }
+            }
+            .video-group{
+                width: 100%;
+                height: 600px;
+                background: #5c87d9;
+            }
+        }
+        .bottom-wrapper{
+            //margin-top: 20px;
+            overflow: hidden;
+            //background: #fff;
+            .course-detail-wrapper{
+                float: left;
+                width: 700px;
+                //padding: 20px;
+                .item-group{
+                    background: #fff;
+                    margin-top: 20px;
+                    padding: 10px;
+                }
+                .item-title{
+                    //margin-top: 20px;
+                    color: $mainFontcolor;
+                    font-size: 18px;
+                    border-left: 5px solid $themecolor;
+                    padding-left: 16px;
+                }
+                .teacher-group{
+                    overflow: hidden;
+                    margin-top: 20px;
+                    .avatar-group{
+                        float: left;
+                        width: 60px;
+                        height: 60px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .teacher-info{
+                        margin-left: 10px;
+                        color: $assistFontcolor;
+                        float: left;
+                        .teacher-desc{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                .item-content{
+                    margin-top: 20px;
+                    color: rgb(68,68,68);
+                    line-height: 1.8; //字体1.8倍
+                }
+            }
+
+            .recommend-wrapper{
+                margin-top: 20px;
+                width: 355px;
+                float: right;
+                background: #fff;
+                padding: 20px;
+                box-sizing: border-box;
+                .recommend-title{
+                    color: $mainFontcolor;
+                    font-size: 18px;
+                }
+                .course-list{
+                    li{
+                        overflow: hidden;
+                        padding: 20px 0;
+                        border-bottom: 1px solid #ededed;
+                        .course-info-group{
+                            float: left;
+                            width: 150px;
+                            position: relative;
+                            height: 90px;
+                            .course-title{
+                                font-size: 16px;
+                                color: $mainFontcolor;
+                            }
+                            .teacher{
+                                position: absolute;
+                                color: $assistFontcolor;
+                                font-size: 14px;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                            }
+                        }
+                        .thumbnail-group{
+                            float: right;
+                            width: 160px;
+                            height: 90px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+

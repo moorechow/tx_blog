@@ -1,5 +1,5 @@
 @import "init.scss";
-@import "constants.scss";
+@import "constants";
 .header{
     width: 100%;
     height: $navHeight;
@@ -20,7 +20,7 @@
         .logo-box{
             width: 380px;
             height: 54px;
-            background: url("../images/tx_logo.png") no-repeat;
+            background: url("../../images/tx_logo.png") no-repeat;
             margin-top: 8px;
             float: left;
             a{

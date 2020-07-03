@@ -1,9 +1,11 @@
-@import "init.scss";
-@import "constants.scss";
+@import "init";
+@import "constants";
 
 .footer{
     font-size: 14px;
     color: #c9c9c9;
+
+
     padding-top: 20px;
     .top-group{
         background: #555e67;
@@ -19,7 +21,7 @@
                 width: 168px;
                 height: 54px;
                 float: left;
-                background: url("../images/tx_logo1.png") no-repeat;
+                background: url("../../images/tx_logo1.png") no-repeat;
                 background-size: 45%;
             }
             .detail-group{
