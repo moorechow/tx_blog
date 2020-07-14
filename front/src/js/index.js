@@ -23,9 +23,9 @@ function Banner() {
     this.bannerWidth = 798;
     this.bannerGroup = $("#banner-group");
     this.index = 1;
-    this.leftArrow = $('.left-arrow');
-    this.rightArrow = $('.right-arrow');
-    this.bannerUl = $('#banner-ul');
+    this.leftArrow = $(".left-arrow");
+    this.rightArrow = $(".right-arrow");
+    this.bannerUl = $("#banner-ul");
     this.liList = this.bannerUl.children("li");
     this.bannerCount = this.liList.length;
     this.pageControl = $(".page-control");
@@ -38,7 +38,7 @@ Banner.prototype.initBanner = function () {
     var lastBanner = self.liList.eq(self.bannerCount-1).clone();
     self.bannerUl.append(firstBanner);
     self.bannerUl.prepend(lastBanner);
-    this.bannerUl.css({"width":self.bannerWidth*(self.bannerCount+2),"left":-self.bannerWidth});
+    self.bannerUl.css({"width":self.bannerWidth*(self.bannerCount+2),'left':-self.bannerWidth});
 };
 
 // 初始化banner下方的几个小圆点

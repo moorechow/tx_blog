@@ -35,5 +35,6 @@ def tx_login(request):
     else:
         # 表单验证失败
         errors = form.get_error()
+        # {"passwrd":['密码过长'，'密码果断'],"telephone":['xx','xxxx']}
         return restful.params_error(message=errors)
 
