@@ -122,6 +122,10 @@ body{
                                     box-sizing: border-box;
                                     cursor: pointer;
                                 }
+                                .disabled{
+                                    color:#ccc;
+                                    border-color: #ccc;
+                                }
                             }
                         }
                     }
